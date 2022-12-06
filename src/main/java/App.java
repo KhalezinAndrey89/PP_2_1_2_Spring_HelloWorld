@@ -8,12 +8,11 @@ public class App {
         HelloWorld bean1 = (HelloWorld) applicationContext.getBean("helloworld");
         HelloWorld bean2 = (HelloWorld) applicationContext.getBean("helloworld");
 
-        Cat benCat1 = (Cat) applicationContext.getBean("This is a cat1");
-        Cat benCat2 = (Cat) applicationContext.getBean("This is a cat2");
+        Cat benCat1 = (Cat) applicationContext.getBean("cat");
+        Cat benCat2 = (Cat) applicationContext.getBean("cat");
 
-
-        System.out.println(bean1 == bean2);
-        System.out.println(benCat1 == benCat2);
+        System.out.println(bean1.equals(bean2));
+        System.out.println(benCat1.equals(benCat2));
 
     }
 }
